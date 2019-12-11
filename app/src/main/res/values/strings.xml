@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Base De Datos Museos</string>
+    <string name="title_activity_table">Tabla Museos</string>
+</resources>

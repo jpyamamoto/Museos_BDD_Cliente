@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".vistas.ActividadFormaMuseo"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/actividad_forma_museo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/nombreLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:" />
+
+                <com.jpyamamoto.basededatosmuseos.vistas.EntradaVerificable
+                    android:id="@+id/nombreInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Museo Nacional de Antropología"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nombreError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El nombre debe contener al menos un caracter." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/salasLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Número de Salas:" />
+
+                <com.jpyamamoto.basededatosmuseos.vistas.EntradaVerificable
+                    android:id="@+id/salasInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="27"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/salasError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa un número entero mayor o igual a 0." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="83dp">
+
+                <TextView
+                    android:id="@+id/costoGeneralLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo General:" />
+
+                <com.jpyamamoto.basededatosmuseos.vistas.EntradaVerificable
+                    android:id="@+id/costoGeneralInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="$100.00"
+                    android:inputType="number|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/costoGeneralError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa un número mayor o igual a 0." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="83dp">
+
+                <TextView
+                    android:id="@+id/costoEstudiantesLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo Estudiantes:" />
+
+                <com.jpyamamoto.basededatosmuseos.vistas.EntradaVerificable
+                    android:id="@+id/costoEstudiantesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="$50.00"
+                    android:inputType="number|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/costoEstudiantesError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa un número mayor o igual a 0." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="83dp">
+
+                <TextView
+                    android:id="@+id/visitantesLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Número de visitantes/año:" />
+
+                <com.jpyamamoto.basededatosmuseos.vistas.EntradaVerificable
+                    android:id="@+id/visitantesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="2000000"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/visitantesError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresa un número entero mayor o igual a 0." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="83dp">
+
+                <Switch
+                    android:id="@+id/estacionamientoInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿El museo cuenta con estacionamiento?"
+                    android:theme="@style/CustomSwitch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <Button
+                    android:id="@+id/botonConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:onClick="confirmar"
+                    android:text="Agregar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
